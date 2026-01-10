@@ -1,3 +1,60 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
+
+@plugin 'daisyui' {
+    themes: pastel --default;
+}
+
+/* Force the site to use a light color scheme and opt out of forced dark mode */
+:root {
+    color-scheme: light;
+    -webkit-color-scheme: light;
+}
+
+html,
+body {
+    background-color: var(--base-100);
+    color: var(--base-content);
+}
+
+/* Custom fonts */
+@font-face {
+    font-family: "FC Pride";
+    src: url("../lib/assets/fonts/FC Pride [Non-commercial].otf") format("opentype");
+    font-display: swap;
+}
+@font-face {
+    font-family: "MN Ice Cream Vanilla";
+    src: url("../lib/assets/fonts/MN Ice Cream Vanilla.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "MN Ice Cream Vanilla";
+    src: url("../lib/assets/fonts/MN Ice Cream Vanilla Italic.ttf") format("truetype");
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+}
+
+:root,
+html,
+body {
+    font-family:
+        "FC Pride",
+        "MN Ice Cream Vanilla",
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        "Segoe UI",
+        Roboto,
+        "Helvetica Neue",
+        Arial,
+        "Noto Sans",
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol";
+}
