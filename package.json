@@ -10,14 +10,17 @@
         "prepare": "npm run types && svelte-kit sync || echo ''",
         "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
         "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-        "format": "oxfmt --write .",
+        "format": "prettier . --write && oxfmt --write .",
         "lint": "oxfmt --check . && oxlint . --fix",
         "types": "wrangler types",
         "test:unit": "vitest",
-        "test": "npm run test:unit -- --run"
+        "test": "npm run test:unit -- --run",
+        "deploy": "bun run build && wrangler deploy"
     },
     "dependencies": {
+        "@sveltejs/adapter-static": "^3.0.10",
         "es-toolkit": "^1.43.0",
+        "svelte-meta-tags": "^4.5.0",
         "ts-pattern": "^5.9.0"
     },
     "devDependencies": {

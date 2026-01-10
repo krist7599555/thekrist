@@ -8,7 +8,16 @@ const config = {
     // for more information about preprocessors
     preprocess: [vitePreprocess(), mdsvex()],
 
-    kit: { adapter: adapter(), experimental: { remoteFunctions: true } },
+    kit: {
+        // prerender: {
+        //     crawl: true,
+        //     entries: ["*"],
+        // },
+        adapter: adapter({
+            // strict: false,
+        }),
+        experimental: { remoteFunctions: true },
+    },
     compilerOptions: {
         experimental: { async: true },
     },

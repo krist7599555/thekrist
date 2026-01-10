@@ -15,7 +15,7 @@ declare global {
         // interface PageState {}
         // interface Platform {}
     }
-    declare module '*.svx' {
+    declare module "*.svx" {
         const component: ConstructorOfATypedSvelteComponent;
         export default component;
     }
