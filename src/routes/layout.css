@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
 
@@ -11,7 +11,10 @@
     :root {
         color-scheme: light;
         -webkit-color-scheme: light;
-        --font-sans: "FC Pride", sans-serif;
+        --font-sans: 'MiSansThai', sans-serif;
+        font-weight: 300;
+        letter-spacing: 0.025em;
+        font-size: 17px;
     }
 
     html,
@@ -19,25 +22,31 @@
         background-color: var(--color-base-100);
         color: var(--color-base-content);
     }
+
     /* Custom fonts */
     @font-face {
-        font-family: "FC Pride";
-        src: url("../lib/assets/fonts/FC Pride [Non-commercial].otf") format("opentype");
-        font-display: swap;
-    }
-    @font-face {
-        font-family: "MN Ice Cream Vanilla";
-        src: url("../lib/assets/fonts/MN Ice Cream Vanilla.ttf") format("truetype");
+        font-family: 'MiSansThai';
+        src: url('../lib/assets/fonts/MiSansThaiVF.woff2') format('woff2-variations');
+        font-weight: 100 900;
         font-style: normal;
-        font-weight: 400;
-        font-display: swap;
     }
+}
 
-    @font-face {
-        font-family: "MN Ice Cream Vanilla";
-        src: url("../lib/assets/fonts/MN Ice Cream Vanilla Italic.ttf") format("truetype");
-        font-style: italic;
-        font-weight: 400;
-        font-display: swap;
-    }
+.prose {
+    max-width: 90ch;
+}
+.prose blockquote p::before,
+.prose blockquote p::after {
+    content: none;
+}
+.prose blockquote p {
+    @apply py-3 text-center font-normal;
+}
+.prose blockquote {
+    @apply border-l-4 bg-base-200 pl-4;
+}
+.prose h1,
+.prose blockquote p,
+.prose p {
+    text-wrap: balance;
 }
