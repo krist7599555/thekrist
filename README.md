@@ -1,94 +1,58 @@
-# 🌟 TheKrist - บล็อกส่วนตัวและโปรเจคแห่งการเปลี่ยนแปลง
+# 🌟 TheKrist — บล็อกส่วนตัว
 
-## ✨ เกี่ยวกับเรา
 
-**TheKrist** คือบล็อกส่วนตัวและโปรเจคที่เกิดจากความตั้งใจที่จะ**ยกระดับคุณภาพชีวิต**ของคนรอบข้างให้ดีขึ้น 🚀
+<a style="text-align: center; display: block; padding: 12px" href="https://thekrist.com">thekrist.com</a>
 
-พวกเราเชื่อว่าเทคโนโลยีและความคิดสร้างสรรค์สามารถ**เปลี่ยนโลกใบเล็ก**ของแต่ละคนให้สดใสและมีความสุขมากขึ้น 🌈
 
-## 💫 วิสัยทัศน์
 
-- 🎯 **สร้างสรรค์เครื่องมือ**ที่ช่วยให้ชีวิตง่ายขึ้น
-- 💡 **แบ่งปันความรู้**และประสบการณ์ที่มีค่า
-- 🤝 **เชื่อมโยงผู้คน**ผ่านเทคโนโลยีและไอเดียใหม่ๆ
-- 🌱 **พัฒนาอย่างต่อเนื่อง**เพื่อสังคมที่ดีกว่า
-
-## 💬 คำคม
-
-1. จิตฺตํ ทนฺตํ สุขาวหํ — ใจที่ฝึกดีแล้วนำสุขมา
-2. นตฺถิ สนฺติปรํ สุขํ — ไม่มีสุขใดจะเกินความสงบ
-3. สุโข ปุญฺญสฺส อุจฺจโย — ความสุขเกิดจากการสั่งสมบุญ
-4. ททมาโน ปิโย โหติ — ผู้ให้ย่อมเป็นที่รัก
-
-![](https://images.pexels.com/photos/933622/pexels-photo-933622.jpeg)
-
-5. อพฺยาปชฺฌํ สุขํ โลเก — ความไม่เบียดเบียนนำความสุขสู่โลก
-6. อตฺตนา โจทยตฺตานํ — จงเตือนตนเอง
-7. ธมฺโม สุจิณฺโณ สุขมาวหาติ — ธรรมที่ปฏิบัติดีย่อมนำสุขมา
-8. ธมฺโม หเว รกฺขติ ธมฺมจารึ — ผู้ประพฤติธรรมย่อมได้รับการคุ้มครองจากธรรม
-
-![](https://images.pexels.com/photos/69934/firefighters-fire-flames-outside-69934.jpeg)
-
-9. นิสมฺม กรณํ เสยฺโย — คิดให้ถี่ถ้วนก่อนลงมือทำ
-10. อรติ โลกนาสิกา — ความริษยาทำลายทุกฝ่าย
-11. โกธํ ฆตฺวา สุขํ เสติ — ผู้ละความโกรธได้ย่อมอยู่เป็นสุข
-12. โลโกปตฺถมฺภิกา เมตฺตา — เมตตาคือพลังที่ประคองโลก
-
-![](https://images.pexels.com/photos/19943230/pexels-photo-19943230.jpeg)
-
-13. มาตา มิตฺตํ สเก ฆเร — แม่คือมิตรแท้ในบ้าน
-14. โย จ ปุตฺตานมสฺสโว — ลูกที่เชื่อฟังคือดีที่สุด
-15. อกฺโกเธน ชิเน โกธํ — ชนะคนโกรธด้วยความไม่โกรธ
-16. อสาธุง สธุนา ชิเน — ชนะคนชั่วด้วยความดี
-
-![](https://images.pexels.com/photos/5592422/pexels-photo-5592422.jpeg)
-
-17. ททํ มิตฺตานิ คนฺถติ — การให้ผูกไมตรี
-18. อปฺปมาโโต อมตํ ปทํ — ความไม่ประมาทนำไปสู่ความไม่ตาย
-19. วิริเยน ทุกฺขมจฺเจติ — ความเพียรทำให้พ้นทุกข์
-20. อตฺตา หเว ชิตํ เสยฺโย — ชนะตนเองคือชัยชนะที่ยิ่งใหญ่ที่สุด
-
-![](https://images.pexels.com/photos/3840204/pexels-photo-3840204.jpeg)
+[TheKrist](https://thekrist.com) เป็นบล็อกส่วนตัวที่เน้นบทความเชิงไดอารี่ ความคิด และบทเรียนชีวิตที่เขียนด้วยภาษาไทย ✨
 
 ---
 
-<img width="30" src="https://railsblocks.com/assets/avatar-a5d1ee3f447b7848722bb247deffa13b72e8bf5cd959b0b718eb7b43a75fed2a.webp"> **UI Component** powered by [railsblocks](https://railsblocks.com)
+## 🔎 สิ่งที่มีในโปรเจค
 
-# sv
+- สร้างด้วย **SvelteKit** และ **mdsvex** (ใช้ `.svx` สำหรับโพสต์)
+- สไตล์ด้วย **Tailwind CSS** และ **DaisyUI** (ธีมตั้งไว้เป็น **light-only**)
+- ฟอนต์หลัก: **MN Ice Cream Vanilla** (วางที่ `src/lib/assets/fonts/`)
+- Formatter: **Oxfmt** (`oxfmt --write .`) — ตอนนี้ใช้ `oxfmt` เป็นเครื่องมือจัดรูปแบบเดียวนะครับ
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+---
 
-## Creating a project
+## 🚀 คำสั่งที่ใช้บ่อย
 
-If you're seeing this, you've probably already done this step. Congrats!
+- พัฒนาแบบ dev: `npm run dev`
+- สร้างโปรดักชัน: `npm run build`
+- พรีวิว: `npm run preview`
+- รัน formatter: `npm run format` (เรียก `oxfmt --write .`)
+- ตรวจและแก้ lint: `npm run lint` (ใช้ `oxfmt --check` + `oxlint --fix`)
+- รันเทสต์: `npm run test`
 
-```sh
-# create a new project in the current directory
-npx sv create
+---
 
-# create a new project in my-app
-npx sv create my-app
-```
+## ✍️ บทความตัวอย่าง
 
-## Developing
+โปรเจคนี้ใช้ไฟล์ `.svx` สำหรับโพสต์ใน `src/routes/` เช่น:
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+- `src/routes/1.svx` — "วิถีซามูไร กับคำถามว่าชีวิตกำลังแลกอะไรอยู่"
+- `src/routes/2.svx` — "ผียุงบอกบุญ"
 
-```sh
-npm run dev
+คุณสามารถเพิ่มไฟล์ `.svx` ใหม่ใน `src/routes/` เพื่อสร้างหน้าโพสต์ได้ทันที
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+---
 
-## Building
+## 🛠️ หมายเหตุการตั้งค่า
 
-To create a production version of your app:
+- ไฟล์ฟอนต์วางที่ `src/lib/assets/fonts/` และถูกประกาศโดย `@font-face` ใน `src/routes/layout.css`
+- เพื่อป้องกันเบราว์เซอร์บังคับโหมดมืด เราได้ตั้งค่า `color-scheme: light` และเพิ่ม `<meta name="color-scheme" content="light" />` ใน `src/app.html` เพื่อให้เว็บแสดงเฉพาะธีมสว่าง
+- ถ้าต้องการรองรับฟอร์แมตเว็บ ฟอนต์ `ttf` สามารถแปลงเป็น `woff/woff2` เพื่อประสิทธิภาพที่ดีกว่า
 
-```sh
-npm run build
-```
+---
 
-You can preview the production build with `npm run preview`.
+## 🤝 ช่วยกันดูแลโค้ด
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+- กรุณารัน `npm run format` ก่อนเปิด PR เพื่อให้รูปแบบโค้ดคงที่
+- ถ้าต้องการ ผมสามารถเพิ่ม Git hook (Husky + lint-staged) ให้รัน formatter อัตโนมัติก่อน commit
+
+---
+
+ถ้าต้องการให้ README นี้เพิ่ม/ปรับอะไรอีก (เช่น ข้อมูลการ deploy, CI, หรือวิธีเขียนโพสต์แบบละเอียด) ก็บอกได้เลยครับ 🙌
