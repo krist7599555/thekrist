@@ -20,8 +20,10 @@
     "dependencies": {
         "@sveltejs/adapter-static": "^3.0.10",
         "es-toolkit": "^1.43.0",
+        "remeda": "^2.33.1",
         "svelte-meta-tags": "^4.5.0",
-        "ts-pattern": "^5.9.0"
+        "ts-pattern": "^5.9.0",
+        "valibot": "^1.2.0"
     },
     "devDependencies": {
         "@sveltejs/adapter-cloudflare": "^7.2.4",

@@ -1,17 +1,17 @@
 <script lang="ts">
-    import Main1 from './1.svx';
-    import Main2 from './2.svx';
+    import { getAllBlogs } from './blog.remote';
+
+    const blogs = await getAllBlogs();
 </script>
 
-<div class="flex justify-between px-8 py-4">
-    <p class="text-xs">กฤษฏิ์ personal blogs</p>
-    <p class="text-xs">จะเขียนอะไรที่อยากเขียน</p>
-</div>
-
 <div class="container mx-auto prose mt-8 px-8 pb-32">
-    {#each [Main2, Main1] as Component}
-        <article>
-            <Component />
+    {#each blogs as { meta, html } (meta.slug)}
+        <article data-slug={meta.slug} data-title={meta.title} data-date={meta.date}>
+            <a href="/{meta.slug}" class="no-underline hover:underline">
+                <h1>{meta.title}</h1>
+            </a>
+            <p class="-mt-6 text-xs text-base-content/70">{meta.date}</p>
+            {@html html.body}
         </article>
         <hr />
     {/each}
