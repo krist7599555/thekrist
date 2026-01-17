@@ -14,6 +14,7 @@
 <MetaTags
     {title}
     {description}
+    keywords={['krist7599555', 'Krist Ponpairin']}
     canonical="https://thekrist.com"
     openGraph={{
         type: 'website',
