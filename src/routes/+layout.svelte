@@ -40,7 +40,7 @@
 />
 
 <div class="flex justify-between px-8 py-4">
-    <a class="text-xs" href="/">กฤษฏิ์ personal blogs</a>
+    <a class="text-xs" href="/" data-sveltekit-reload>กฤษฏิ์ personal blogs</a>
     <p class="text-xs">จะเขียนอะไรที่อยากเขียน</p>
 </div>
 

@@ -8,5 +8,5 @@
 <div class="container mx-auto prose mt-8 px-8 pb-32">
     <ArticleBlog {blog} />
     <hr />
-    <a href="/">กลับหน้าแรก</a>
+    <a href="/" data-sveltekit-reload>กลับหน้าแรก</a>
 </div>
