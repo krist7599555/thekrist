@@ -45,6 +45,9 @@
 .prose blockquote {
     @apply border-l-4 bg-base-200 pl-4;
 }
+.prose h2 {
+    font-size: 1.35rem;
+}
 .prose h1,
 .prose blockquote p,
 .prose p {
