@@ -18,7 +18,7 @@
     data-title={meta.title}
     data-date={meta.date}
 >
-    <a href="/{meta.slug}" class="no-underline hover:underline">
+    <a href="/{meta.slug}" class="no-underline hover:underline" data-sveltekit-reload>
         <h1>{meta.title}</h1>
     </a>
 
