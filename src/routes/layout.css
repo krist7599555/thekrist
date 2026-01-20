@@ -53,3 +53,8 @@
 .prose p {
     text-wrap: balance;
 }
+
+.prose p:has(img) {
+    margin-left: -2rem;
+    margin-right: -2rem;
+}
