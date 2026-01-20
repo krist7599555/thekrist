@@ -1,0 +1,16 @@
+---
+slug: "css-mesh"
+title: "css-mesh"
+date: "20 มกราคม 2569"
+tags: webdev, css
+---
+
+
+<div id="blog-5-css-mesh" class="w-full aspect-video text-center select-none text-white bg-white grid place-content-center">
+  <p>CSS MESH</p>
+  <script src="/5.js" defer async></script>
+</div>
+
+ทั้งหมดนี้ใช้ <a href="/5.js" target="_blank">code</a> นิดเดียวเป็น css ล้วน
+
+

@@ -41,7 +41,7 @@
     {@html blog.html.body}
 
     <div
-        class="mt-20 flex items-center justify-center gap-2 text-left text-xs leading-5 text-base-content/70"
+        class="mt-5 flex items-center justify-center gap-2 text-left text-xs leading-5 text-base-content/70"
     >
         <img src="/favicon.png" alt="" class="size-15" />
         <p>
