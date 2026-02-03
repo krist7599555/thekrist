@@ -7,7 +7,10 @@ const BLOGS = await Promise.all(
     Object.entries(import.meta.glob("./*.svx", { eager: true })).map(
         async ([path, mod]: [string, any]) => ({
             filepath: path,
-            meta: mod.metadata as Record<"title" | "date" | "slug" | "tags", any>,
+            meta: { expand: false, ...mod.metadata } as Record<
+                "title" | "date" | "slug" | "tags" | "expand",
+                any
+            >,
             html: await render(mod.default, {}),
         }),
     ),

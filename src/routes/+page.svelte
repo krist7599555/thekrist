@@ -6,7 +6,7 @@
 
 <div class="container mx-auto prose mt-8 px-8 pb-32">
     {#each blogs as blog, idx (blog.meta.slug)}
-        <ArticleBlog expand={idx < 1} {blog}>
+        <ArticleBlog expand={blog.meta.expand || idx < 1} {blog}>
             {#snippet after()}
                 <hr class="mt-5 mb-2" />
                 <hr class="mb-2" />

@@ -3,20 +3,16 @@ slug: "sudoku-zig"
 title: "sudoku-zig"
 date: "4 กุมภาพันธ์ 2569"
 tags: webdev, zig, wasm
+expand: true
 ---
 
-
-[open in github page](https://krist7599555.github.io/sudoku-zig/)
-
-<div id="blog-6-sudoku-zig">
-
-
-  <iframe width="400" height="500" class="mx-auto" src="https://krist7599555.github.io/sudoku-zig/">
+<div id="blog-6-sudoku-zig" class="-mt-12 -ml-3">
+  <iframe width="400" height="500" class="" src="https://krist7599555.github.io/sudoku-zig/">
 </div>
 
 โจทย์แก้ปัญหา sudoku เป็นโจทย์ classic มาตลอดในการเรียน backtracking algorithm แต่การคำนวนต้องใช้เวลานานสุดๆ ผมเลยหาทาง Optimize โดยการใช้ low level language เช่่นภาษา `Zig` ที่มีการบังคับการจัดการ memory เอง และ build เป็น wasm ให้ใช่ใน browser ได้ ได้ผลเป็นแบบข้างล่างนี้เลย
 
-ถ้าสนใจดูโคดได้ที่
-- [sudoku.zig](https://github.com/krist7599555/sudoku-zig/blob/main/src/root.zig)
-- [sudoku.mjs](https://github.com/krist7599555/sudoku-zig/blob/main/sudoku_zig.js)
+แต่ถ้าวิเคราะ ux/ui การเร็วมากก็ไม่ดี ที่กดแล้วค่าเปลี่ยนเลย เพราะคนใช้จะรู้สึกว่ามัน ราคาถูก+ง่าย ถ้าจะทำอะไรเพิ่มก็คงต้องทำ animation เพิ่มแหละให้รู้สึกว่า คอมมันคำนวนหนักจริงๆนะ
+
+ถ้าสนใจดูโคดได้ที่ [`sudoku.zig`](https://github.com/krist7599555/sudoku-zig/blob/main/src/root.zig), [`sudoku.mjs`](https://github.com/krist7599555/sudoku-zig/blob/main/sudoku_zig.js)
 
