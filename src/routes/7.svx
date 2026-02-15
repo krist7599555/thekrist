@@ -1,0 +1,34 @@
+---
+slug: "zig-raylib-browser"
+title: "เอา Raylib Graphic มารันใน Website ได้แล้ว!!"
+date: "15 กุมภาพันธ์ 2569"
+tags: zig, wasm, raylib, webgl
+expand: true
+---
+
+<div id="blog-7" class="">
+  <iframe width="730" height="550" class="" src="https://krist7599555.github.io/zig-raylib-browser-runtime">
+</div>
+
+ถ้าพูดถึงการทำ GameDev ก็จะมีหลาย Tool ให้นึกถึง แต่ถ้าเป็นของที่ Low Level ลงมาในภาษา C ก็คงไม่พ้น [Raylib](https://www.raylib.com/)
+
+แต่การเขียนด้วยภาษา C มันเหนื่อยมาก แต่มีภาษาที่เป็นพลังให้ [Bun](https://bun.sh/) และทำให้การเขียน low level ชัดเจนกว่าเดิมด้วยการ explicit memory management อย่างภาษา Zig
+
+เลยได้ลองเอาภาษา Zig มาต่อ Raylib ที่เป็น C / OpenGL library ให้มันสามารถ render บน WebGL ผ่าน [Emscripten SDK (emsdk)](https://emscripten.org/)
+
+ปัญหาหลักไม่ได้อยู่ที่ Raylib หรือ Zig โดยตรง แต่เป็นการจัดการ Emscripten SDK ที่มีหลายเวอร์ชัน การตั้งค่า environment ค่อนข้างซับซ้อน และการเขียน `build.zig` ให้ทำงานร่วมกับ emsdk ยังมีตัวอย่างและเอกสารค่อนข้างจำกัด โดยเฉพาะเมื่อใช้ Zig แทน C/C++
+
+นอกจากนี้ยังมีความท้าทายในการสื่อสารระหว่าง WebAssembly (Zig) กับ JavaScript เช่น การส่ง string การจัดการ memory ที่แชร์กัน และการออกแบบ API ให้ใช้งานบน browser ได้สะดวก
+
+สุดท้ายโปรเจกต์นี้จึงกลายเป็นตัวอย่างของ runtime ที่:
+- ใช้ Zig เป็นภาษาหลัก
+- ผูกกับ Raylib สำหรับ rendering
+- คอมไพล์ด้วย Emscripten ไปเป็น WebAssembly
+- สามารถ render ผ่าน WebGL บน browser ได้จริง
+- รองรับการสื่อสารข้อมูลระหว่าง Zig ↔ JavaScript
+
+สามารถไปดูแนวทางการเขียนเพิ่มเติมได้ที่  
+[github:krist7599555/zig-raylib-browser-runtime](https://github.com/krist7599555/zig-raylib-browser-runtime)
+
+หรือทดลองเล่นได้ที่เว็บไซต์  
+[https://krist7599555.github.io/zig-raylib-browser-runtime](https://krist7599555.github.io/zig-raylib-browser-runtime)
